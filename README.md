@@ -6,15 +6,15 @@ git clone https://github.com/justmiroslav/nc-proxy.git
 ```
 2. Перейдіть до каталогу репозиторію
 ```bash
-cd nc-proxy
+cd nc-proxy/
 ```
 3. Виконайте скрипт для налаштування дозволів файлів:
 ```bash
 bash chmod_files.sh
 ```
-4. Запустіть налаштування сервера, вказавши IP контейнера:
+4. Запустіть налаштування сервера:
 ```bash
-sudo ./setup.py <container_ip>
+sudo ./setup.py
 ```
 
 ## Детальний опис файлів
