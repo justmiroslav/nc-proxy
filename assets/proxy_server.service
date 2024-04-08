@@ -1,0 +1,12 @@
+[Unit]
+Description=Proxy Server
+After=apache2.service
+Requires=apache2.service
+
+[Service]
+ExecStart=/usr/bin/sudo /usr/bin/socat TCP-LISTEN:80,reuseaddr,fork EXEC:"/home/ubuntu/nc-proxy/proxy_server.py"
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
